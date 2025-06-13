@@ -58,11 +58,13 @@ public class BillListActivity extends AppCompatActivity {
         ids.clear();
 
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        try (Cursor cursor = db.rawQuery("SELECT id, month FROM bills WHERE user_id=?", new String[]{user.getEmail()})) {
+        try (Cursor cursor = db.rawQuery("SELECT id, month, total FROM bills WHERE user_id=?", new String[]{user.getEmail()})) {
             while (cursor.moveToNext()) {
                 int id = cursor.getInt(0);
                 String month = cursor.getString(1);
-                listItems.add(month);
+                double total = cursor.getDouble(2);
+
+                listItems.add(month + " - Total: RM " + String.format("%.2f", total));
                 ids.add(id);
             }
         }
@@ -73,5 +75,4 @@ public class BillListActivity extends AppCompatActivity {
             Toast.makeText(this, "No history found. Please add a calculation.", Toast.LENGTH_SHORT).show();
         }
     }
-
 }
