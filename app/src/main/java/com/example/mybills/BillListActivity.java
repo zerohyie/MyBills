@@ -64,7 +64,7 @@ public class BillListActivity extends AppCompatActivity {
                 String month = cursor.getString(1);
                 double total = cursor.getDouble(2);
 
-                listItems.add(month + " - Total: RM " + String.format("%.2f", total));
+                listItems.add(month + "\nTotal: RM " + String.format("%.2f", total));
                 ids.add(id);
             }
         }
