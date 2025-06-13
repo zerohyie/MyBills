@@ -47,7 +47,6 @@ public class BillListActivity extends AppCompatActivity {
         });
     }
 
-    // Reload list every time user returns to this screen
     @Override
     protected void onResume() {
         super.onResume();
@@ -69,5 +68,10 @@ public class BillListActivity extends AppCompatActivity {
         }
 
         adapter.notifyDataSetChanged();
+
+        if (listItems.isEmpty()) {
+            Toast.makeText(this, "No history found. Please add a calculation.", Toast.LENGTH_SHORT).show();
+        }
     }
+
 }
