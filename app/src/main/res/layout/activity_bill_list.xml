@@ -25,7 +25,8 @@
         android:layout_weight="1"
         android:divider="@color/primary"
         android:dividerHeight="1dp"
-        android:background="@android:color/white"
+        android:background="@color/backgroundLight"
         android:padding="8dp"
         android:clipToPadding="false"/>
+
 </LinearLayout>
