@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primaryDark</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:colorBackground">@color/backgroundLight</item>
+        <item name="android:textColor">@color/textDark</item>
+
+        <item name="android:statusBarColor">@color/statusBarLight</item>
+        <item name="android:navigationBarColor">@color/secondary</item>
+    </style>
+</resources>

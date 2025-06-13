@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "409091040774",
+    "project_id": "mybills-ict602",
+    "storage_bucket": "mybills-ict602.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409091040774:android:2fe8568fe72b6a41f48587",
+        "android_client_info": {
+          "package_name": "com.example.mybills"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG_QwQkeUT0cZfhBAc6Y5hlIacIYyaSRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
