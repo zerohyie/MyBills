@@ -18,9 +18,9 @@ public class AboutActivity extends AppCompatActivity {
         TextView link = findViewById(R.id.tvGithub);
 
         tv.setText("Name: Ain Nazirah Binti Mohammad Ibrahim\nStudent ID: 2024988457\nGroup: CDCS2405B\nCourse: ICT602 Mobile Technology\n© 2025");
-        link.setText("GitHub: https://ufuture.uitm.edu.my/home/");
+        link.setText("https://github.com/zerohyie/MyBills");
         link.setOnClickListener(v -> {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://ufuture.uitm.edu.my/home/"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/zerohyie/MyBills"));
             startActivity(browserIntent);
         });
     }
