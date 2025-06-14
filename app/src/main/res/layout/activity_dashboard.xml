@@ -22,103 +22,57 @@
             app:cardCornerRadius="16dp"
             app:cardBackgroundColor="@android:color/white">
 
-            <LinearLayout
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:gravity="center"
                 android:padding="24dp">
 
                 <TextView
                     android:id="@+id/tvWelcome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="16dp"
-                    android:text="Welcome"
+                    android:text="Welcome, User!"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     android:textColor="@color/secondary"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:layout_marginBottom="32dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
-                    android:text="Bill Actions"
-                    android:textColor="@color/primaryDark"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
+                <Button
+                    android:id="@+id/btnEstimate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:layout_marginBottom="8dp">
+                    android:text="Estimate Bill" />
 
-                    <Button
-                        android:id="@+id/btnEstimate"
-                        android:layout_width="0dp"
-                        android:layout_height="56dp"
-                        android:layout_marginEnd="12dp"
-                        android:layout_weight="1"
-                        android:text="Estimate Bills" />
-
-                    <Button
-                        android:id="@+id/btnViewBills"
-                        android:layout_width="0dp"
-                        android:layout_height="56dp"
-                        android:layout_weight="1"
-                        android:text="Saved Bills" />
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="Account"
-                    android:textColor="@color/primaryDark"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
+                <Button
+                    android:id="@+id/btnViewBills"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:layout_marginBottom="8dp">
+                    android:text="Saved Bills"
+                    android:layout_marginTop="16dp" />
 
-                    <Button
-                        android:id="@+id/btnAccount"
-                        android:layout_width="0dp"
-                        android:layout_height="56dp"
-                        android:layout_weight="1"
-                        android:layout_marginEnd="12dp"
-                        android:text="My Account" />
+                <Button
+                    android:id="@+id/btnAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Account"
+                    android:layout_marginTop="16dp" />
 
-                    <Button
-                        android:id="@+id/btnAbout"
-                        android:layout_width="0dp"
-                        android:layout_height="56dp"
-                        android:layout_weight="1"
-                        android:text="About This App" />
-                </LinearLayout>
+                <Button
+                    android:id="@+id/btnAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About This App"
+                    android:layout_marginTop="16dp" />
 
                 <Button
                     android:id="@+id/btnLogout"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingLeft="48dp"
-                    android:paddingRight="48dp"
-                    android:paddingTop="12dp"
-                    android:paddingBottom="12dp"
                     android:text="Logout"
-                    android:layout_marginTop="24dp"
                     android:backgroundTint="@color/accent"
-                    android:textColor="@android:color/white" />
+                    android:layout_marginTop="30dp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
